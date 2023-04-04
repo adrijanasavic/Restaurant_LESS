@@ -1,0 +1,114 @@
+@import "./mixins";
+@import "./var";
+.products {
+  background: @mainDark;
+  .product-info {
+    padding: 2rem;
+    .product-title {
+      color: @primaryColor;
+      font-family: "Drevna", cursive;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+    }
+    .product-subtitle {
+      color: @mainWhite;
+      font-size: 1.4rem;
+      text-transform: @textTransform;
+      margin-top: 0.7rem;
+    }
+    .product-text {
+      color: @mainWhite;
+      margin-top: 0.5rem;
+    }
+    .main-btn {
+      text-decoration: none;
+      display: inline-block;
+      background: @primaryColor;
+      text-transform: @textTransform;
+      padding: 0.8rem 1.2rem;
+      color: @mainDark;
+      .backgroundColor(@mainDark);
+      font-weight: bold;
+      outline: 0.2rem solid @primaryColor;
+      outline-offset: 4px;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: @mainWhite;
+        opacity: 0.7;
+      }
+    }
+  }
+  .product-list {
+    .product-single {
+      padding: 10px;
+      .product-image {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0.5rem;
+      }
+      .product-single-title {
+        color: @mainWhite;
+        letter-spacing: 0.5rem;
+        text-transform: @textTransform;
+        font-size: 1.2rem;
+        margin-top: 0.7rem;
+        padding: 0 10px;
+      }
+      .product-single-price {
+        color: @primaryColor;
+        letter-spacing: 0.5rem;
+        font-family: "Drevna", cursive;
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 0 10px;
+        margin-top: 0.7rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products .product-list .product-single {
+    margin-top: 0;
+    float: left;
+    width: 33.33%;
+    padding: 2rem 1rem;
+  }
+  .products .product-list .product-info {
+    float: left;
+    width: 30%;
+    padding: 2rem 1rem;
+  }
+  .products .product-list .product-list {
+    float: left;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-single {
+    margin-top: 0;
+    float: left;
+    width: 33.33%;
+    padding: 2rem 1rem;
+  }
+  .product-info {
+    float: left;
+    width: 30%;
+    padding: 2rem 1rem;
+  }
+  .product-list {
+    float: left;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-single {
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+  .product-info {
+    padding: 2rem 1rem;
+  }
+}

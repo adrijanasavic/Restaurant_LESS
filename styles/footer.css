@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNig.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  border: 1px solid #000;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -0.125em;
+  background: #706982;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.footer .footer-content p {
+  color: #A0A0A0;
+  font-family: "Comic Sans MS";
+  font-size: 20px;
+}
+.footer .footer-content .footer-copy {
+  padding-top: 0.2rem;
+}
+@media screen and (max-width: 240px) {
+  .footer {
+    background-color: #f2a7d7;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    color: #fff;
+    width: 100%;
+    height: 150px;
+  }
+  .footer-content {
+    color: black;
+    font-size: 10px;
+  }
+  .footer-content .footer-copy {
+    font-size: 13px;
+  }
+}

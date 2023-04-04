@@ -1,0 +1,445 @@
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNig.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/drevna.jpg") center / cover no-repeat fixed;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20%;
+}
+.header-title {
+  color: #67c0f0;
+  font-family: "Drevna", cursive;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+.header-subtitle {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 250px) {
+  .header-subtitle,
+  .header-btn {
+    font-size: 0.7rem;
+  }
+}
+.header-btn {
+  text-decoration: none;
+  display: inline-block;
+  background: #67c0f0;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  color: #706982;
+  font-weight: bold;
+  outline: 0.2rem solid #67c0f0;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.header-btn:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+.divider {
+  height: 0.5rem;
+  background: linear-gradient(to right, #67c0f0, #f2a7d7, #67c0f0);
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.skills .skill {
+  background: #e5e5e5;
+  text-align: center;
+  padding: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+.skills .skill:hover {
+  background: #67c0f0;
+}
+.skills .skill-icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  transform: all 0.3s ease-in-out;
+  color: #f2a7d7;
+}
+.skills .skill-icon:hover {
+  color: #fff;
+}
+.skills .skill-title {
+  color: #f2a7d7;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1.3rem;
+}
+.skills .skill-title:hover {
+  color: #fff;
+}
+.skills .skill-text {
+  color: #706982;
+  margin-top: 1.3rem;
+}
+.skills .skill:hover {
+  color: #fff;
+}
+@media screen and (min-width: 576px) {
+  .skills .skill {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills .skill {
+    width: 25%;
+    float: left;
+  }
+}
+@media screen and (max-width: 250px) {
+  .skills .skill {
+    padding: 5px;
+  }
+}
+.style,
+.about .about-info .main-btn {
+  color: #706982;
+  font-weight: bold;
+}
+.about {
+  padding: 10px;
+}
+.about .section-center {
+  width: 80;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.about .about-image {
+  padding: 2rem 0;
+}
+.about .about-image .about-image-border {
+  border: 3px solid #67c0f0;
+  border-radius: 1.3rem;
+  background: #67c0f0;
+  overflow: hidden;
+}
+.about .about-image .about-image-border .about-picture {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.about .about-image .about-image-border .about-picture:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+.about .about-info .about-title {
+  font-size: 1.3rem;
+  font-family: "Drevna", cursive;
+  color: #67c0f0;
+  letter-spacing: 0.5rem;
+}
+.about .about-info .about-subtitle {
+  color: #706982;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+.about .about-info .main-btn {
+  text-decoration: none;
+  display: inline-block;
+  background: #67c0f0;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  outline: 0.2rem solid #67c0f0;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.about .about-info .main-btn:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+@media screen and (min-width: 992px) {
+  .about .about-image,
+  .about .about-info {
+    padding: 1rem;
+    width: 50%;
+    float: left;
+  }
+}
+.products {
+  background: #706982;
+}
+.products .product-info {
+  padding: 2rem;
+}
+.products .product-info .product-title {
+  color: #67c0f0;
+  font-family: "Drevna", cursive;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.products .product-info .product-subtitle {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-top: 0.7rem;
+}
+.products .product-info .product-text {
+  color: #fff;
+  margin-top: 0.5rem;
+}
+.products .product-info .main-btn {
+  text-decoration: none;
+  display: inline-block;
+  background: #67c0f0;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  color: #706982;
+  border: 1px solid #000;
+  font-weight: bold;
+  outline: 0.2rem solid #67c0f0;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.products .product-info .main-btn:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+.products .product-list .product-single {
+  padding: 10px;
+}
+.products .product-list .product-single .product-image {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+.products .product-list .product-single .product-single-title {
+  color: #fff;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
+  padding: 0 10px;
+}
+.products .product-list .product-single .product-single-price {
+  color: #67c0f0;
+  letter-spacing: 0.5rem;
+  font-family: "Drevna", cursive;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0 10px;
+  margin-top: 0.7rem;
+}
+@media screen and (min-width: 1200px) {
+  .products .product-list .product-single {
+    margin-top: 0;
+    float: left;
+    width: 33.33%;
+    padding: 2rem 1rem;
+  }
+  .products .product-list .product-info {
+    float: left;
+    width: 30%;
+    padding: 2rem 1rem;
+  }
+  .products .product-list .product-list {
+    float: left;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-single {
+    margin-top: 0;
+    float: left;
+    width: 33.33%;
+    padding: 2rem 1rem;
+  }
+  .product-info {
+    float: left;
+    width: 30%;
+    padding: 2rem 1rem;
+  }
+  .product-list {
+    float: left;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-single {
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+  .product-info {
+    padding: 2rem 1rem;
+  }
+}
+.contact {
+  padding: 2rem;
+}
+.contact .clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.contact .clearfix:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.contact .clearfix .contact-info .adress-block {
+  margin-bottom: 1.5rem;
+}
+.contact .clearfix .contact-info .adress-block .adress-text {
+  color: #706982;
+}
+.contact .clearfix .contact-info .adress-block > span,
+.contact .clearfix .contact-info .adress-block i {
+  color: #67c0f0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: "Drevna", cursive;
+  letter-spacing: 0.5rem;
+}
+.contact .clearfix .contact-form {
+  padding: 2rem;
+}
+.contact .clearfix .contact-form .form-control {
+  border: 0;
+  border-bottom: 2px solid #67c0f0;
+  margin-bottom: 1.8rem;
+  width: 100%;
+  display: block;
+}
+.contact .clearfix .contact-form .main-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #67c0f0;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  color: #706982;
+  font-weight: bold;
+  outline: 0.2rem solid #67c0f0;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 992px) {
+  .contact .clearfix .contact-info {
+    padding: 2rem 1rem;
+    float: left;
+    width: 50%;
+  }
+  .contact .clearfix .contact-form {
+    padding: 1rem;
+    width: 50%;
+    float: left;
+  }
+  .contact .clearfix .contact-form .form-control {
+    border: 0;
+    border-bottom: 2px solid #67c0f0;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 240px) {
+  .contact {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+  .contact-info {
+    padding: 0.5rem;
+  }
+  .contact-form {
+    padding: 0 0.5rem;
+  }
+}
+.footer {
+  border: 1px solid #000;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -0.125em;
+  background: #706982;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.footer .footer-content p {
+  color: #A0A0A0;
+  font-family: "Comic Sans MS";
+  font-size: 20px;
+}
+.footer .footer-content .footer-copy {
+  padding-top: 0.2rem;
+}
+@media screen and (max-width: 240px) {
+  .footer {
+    background-color: #f2a7d7;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    color: #fff;
+    width: 100%;
+    height: 150px;
+  }
+  .footer-content {
+    color: black;
+    font-size: 10px;
+  }
+  .footer-content .footer-copy {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,69 @@
+@import "./mixins";
+@import "./var";
+.contact {
+  .mixinPadding();
+  .clearfix {
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    &:before {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .contact-info {
+      .adress-block {
+        margin-bottom: 1.5rem;
+        .adress-text {
+          color: @mainDark;
+        }
+        > span,
+        i {
+          color: @primaryColor;
+          font-size: 1.6rem;
+          text-transform: @textTransform;
+          font-family: @slantedText;
+          letter-spacing: @letterSpacing;
+        }
+      }
+    }
+    .contact-form {
+      .mixinPadding();
+      .form-control {
+        .mixinForm();
+        .mixinWidth();
+      }
+      .main-btn {
+        .mixinDisplay();
+      }
+    }
+    @media screen and (min-width: 992px) {
+      .contact-info {
+        padding: 2rem 1rem;
+        float: left;
+        width: 50%;
+      }
+      .contact-form {
+        .mixinF();
+        .form-control {
+          .mixinForm();
+          .mixinWidth();
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 240px) {
+  .contact {
+    padding: 0.5rem;
+    font-size: 14px;
+    &-info {
+      padding: 0.5rem;
+    }
+    &-form {
+      padding: 0 0.5rem;
+    }
+  }
+}

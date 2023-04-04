@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "name": "restaurant",
+  "description": "��#\u0000 \u0000R\u0000e\u0000s\u0000t\u0000a\u0000u\u0000r\u0000a\u0000n\u0000t\u0000_\u0000L\u0000E\u0000S\u0000S\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrijanasavic/Restaurant_LESS.git"
+  },
+  "author": "Adrijana Savic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrijanasavic/Restaurant_LESS/issues"
+  },
+  "homepage": "https://github.com/adrijanasavic/Restaurant_LESS#readme"
+}

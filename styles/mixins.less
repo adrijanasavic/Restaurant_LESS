@@ -1,0 +1,79 @@
+@import "./var";
+
+.backgroundColor(@a) when (@a = @mainDark) {
+  border: 1px solid #000;
+}
+
+.theme (@mode) when (@mode = "velikiEkran") {
+  background-color: @mainDark;
+}
+
+.theme (@mode) when not (@mode = "velikiEkran") {
+  background-color: @secondaryColor;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  color: @mainWhite;
+}
+
+.mixinPadding(@padding:2rem) {
+  padding: @padding;
+}
+
+.mixinCenter(@width: 80px, @max-width: 1170px, @margin: 0 auto) {
+  width: @width;
+  max-width: @max-width;
+  margin: @margin;
+}
+
+.mixinWidth() {
+  width: 100%;
+  display: block;
+}
+
+.mixinDisplay() {
+  display: inline-block;
+  text-decoration: none;
+  background: @primaryColor;
+  text-transform: @textTransform;
+  padding: 0.8rem 1.2rem;
+  color: @mainDark;
+  font-weight: bold;
+  outline: 0.2rem solid @primaryColor;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: @mainTransition;
+}
+
+.mixinF() {
+  padding: 1rem;
+  width: 50%;
+  float: left;
+}
+
+.mixinF1(@padding; @width; @float) {
+  padding: @padding;
+  width: @width;
+  float: @float;
+}
+
+.mixinBorder() {
+  border: 3px solid @primaryColor;
+  border-radius: 1.3rem;
+  background: @primaryColor;
+  overflow: hidden;
+}
+.mixinFooter() {
+  background: @mainDark;
+  height: 100px;
+  text-align: center;
+  color: @mainWhite;
+  text-transform: @textTransform;
+  letter-spacing: 0.3rem;
+}
+
+.mixinForm() {
+  border: 0;
+  border-bottom: 2px solid @primaryColor;
+  margin-bottom: 1.8rem;
+}

@@ -1,0 +1,67 @@
+@import "./mixins";
+@import "./var";
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: @letterSpacing;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/drevna.jpg") center/cover no-repeat fixed;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20%;
+
+  &-title {
+    color: @primaryColor;
+    font-family: @slantedText;
+    transition: @mainTransition;
+    font-size: 1.2rem;
+  }
+  &-subtitle {
+    color: @mainWhite;
+    text-transform: @textTransform;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: @mainTransition;
+  }
+  @media screen and (max-width: 250px) {
+    &-subtitle,
+    &-btn {
+      font-size: 0.7rem;
+    }
+  }
+
+  &-btn {
+    text-decoration: none;
+    display: inline-block;
+    background: @primaryColor;
+    text-transform: @textTransform;
+    padding: 0.8rem 1.2rem;
+    color: @mainDark;
+    font-weight: bold;
+    outline: 0.2rem solid @primaryColor;
+    outline-offset: 4px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: @mainTransition;
+  }
+  &-btn:hover {
+    color: @mainWhite;
+    opacity: 0.7;
+  }
+}
+
+.divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to right,
+    @primaryColor,
+    @secondaryColor,
+    @primaryColor
+  );
+}

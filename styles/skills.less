@@ -1,0 +1,68 @@
+@import "./mixins";
+@import "./var";
+.clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  &:before {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+.skills {
+  .skill {
+    background: @mainGrey;
+    text-align: center;
+    padding: 5rem;
+    transition: @mainTransition;
+    &:hover {
+      background: @primaryColor;
+    }
+    &-icon {
+      font-size: 2.5rem;
+      display: inline-block;
+      transform: @mainTransition;
+      color: @secondaryColor;
+      &:hover {
+        color: @mainWhite;
+      }
+    }
+    &-title {
+      color: @secondaryColor;
+      font-size: 1.3rem;
+      text-transform: @textTransform;
+      font-weight: 600;
+      margin-top: 1.3rem;
+      &:hover {
+        color: @mainWhite;
+      }
+    }
+    &-text {
+      color: @mainDark;
+      margin-top: 1.3rem;
+    }
+    &:hover {
+      color: @mainWhite;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .skill {
+      width: 50%;
+      float: left;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .skill {
+      width: 25%;
+      float: left;
+    }
+  }
+  @media screen and (max-width: 250px) {
+    .skill {
+      padding: 5px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNig.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact {
+  padding: 2rem;
+}
+.contact .clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.contact .clearfix:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.contact .clearfix .contact-info .adress-block {
+  margin-bottom: 1.5rem;
+}
+.contact .clearfix .contact-info .adress-block .adress-text {
+  color: #706982;
+}
+.contact .clearfix .contact-info .adress-block > span,
+.contact .clearfix .contact-info .adress-block i {
+  color: #67c0f0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: "Drevna", cursive;
+  letter-spacing: 0.5rem;
+}
+.contact .clearfix .contact-form {
+  padding: 2rem;
+}
+.contact .clearfix .contact-form .form-control {
+  border: 0;
+  border-bottom: 2px solid #67c0f0;
+  margin-bottom: 1.8rem;
+  width: 100%;
+  display: block;
+}
+.contact .clearfix .contact-form .main-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #67c0f0;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  color: #706982;
+  font-weight: bold;
+  outline: 0.2rem solid #67c0f0;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 992px) {
+  .contact .clearfix .contact-info {
+    padding: 2rem 1rem;
+    float: left;
+    width: 50%;
+  }
+  .contact .clearfix .contact-form {
+    padding: 1rem;
+    width: 50%;
+    float: left;
+  }
+  .contact .clearfix .contact-form .form-control {
+    border: 0;
+    border-bottom: 2px solid #67c0f0;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 240px) {
+  .contact {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+  .contact-info {
+    padding: 0.5rem;
+  }
+  .contact-form {
+    padding: 0 0.5rem;
+  }
+}

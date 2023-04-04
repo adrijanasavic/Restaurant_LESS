@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32KxfXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXNig.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/worksans/v18/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNig.ttf) format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+.skills .skill {
+  background: #e5e5e5;
+  text-align: center;
+  padding: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+.skills .skill:hover {
+  background: #67c0f0;
+}
+.skills .skill-icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  transform: all 0.3s ease-in-out;
+  color: #f2a7d7;
+}
+.skills .skill-icon:hover {
+  color: #fff;
+}
+.skills .skill-title {
+  color: #f2a7d7;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1.3rem;
+}
+.skills .skill-title:hover {
+  color: #fff;
+}
+.skills .skill-text {
+  color: #706982;
+  margin-top: 1.3rem;
+}
+.skills .skill:hover {
+  color: #fff;
+}
+@media screen and (min-width: 576px) {
+  .skills .skill {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills .skill {
+    width: 25%;
+    float: left;
+  }
+}
+@media screen and (max-width: 250px) {
+  .skills .skill {
+    padding: 5px;
+  }
+}
